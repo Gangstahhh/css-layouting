@@ -1,0 +1,42 @@
+/* NOTE : hapus tanda komentar untuk Melihat Hasilnya*/
+/* Pada Element Dissplay Ini Terbagi Menjadi 4 Bagian Yaitu: - Inline
+       - Block
+       - Inline Block 
+       - None */
+
+/* INLINE  */
+/* - Display Inline ukurannya mengikut isi konten
+   - tidak bisa di ubah ukurannya kcuali tag (img)*/
+a {
+    background-color:pink;
+    width:20px;
+    height:40px; /* tidak bisa di atur tinggi dan lebarnya */
+    /* INLINE-BLOCK */
+    /*Display:inline-block;*/ 
+    /* Tetapi Jika di ubah menjadi inline block baru bisa di ubah ukurannya */
+}
+
+
+/* BLOCK */
+/* - Display Block ukuranya mengikuti ukuran parent nya/ containerya 
+    - Memulai baris baru jika ada content yang di buat
+    - Ukurannya Bisa Di Atur
+ */
+.main {
+    background-color:blue;
+}
+.main h3 {
+    background-color:red;
+}
+
+/* NONE */
+/* - Display None Berfungsi Untuk Menghilangkan Content */
+/* .main img {
+    Display:none; 
+} */
+
+/* MENGUBAH PRILAKU ELEMENT DISPLAY*/
+/* .navigasi a {
+    Display:block; Kita Bisa Merubah Display yang defaultnya inline kita bisa buat menjadi block dan sebaliknya 
+}
+*/
