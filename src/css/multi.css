@@ -1,0 +1,33 @@
+/* NOTE: Pastikan Ukuran Dari Setiap Element Sesuai Dengan Pembungkusnya Kalau Tidak content akan keluar dari pembungkus */
+
+/* TIPS: Out of flow ini bisa di  atasi dengan property box-sizing */
+
+.container {
+    width:800px;
+    border:1px solid black;
+    margin:auto;
+    padding:3px;
+}
+
+.kiri {
+    width:150px;
+    height:500px;
+    background-color:red;
+    float:left;
+    padding:10px; /* akan keluar dari pembungkusnya */
+    box-sizing:border-box;
+}
+
+.tengah {
+    width:500px;
+    height:500px;
+    background-color:yellow;
+    float:left;
+}
+
+.kanan {
+    width:150px;
+    height:500px;
+    background-color:blue;
+    float:left;
+}

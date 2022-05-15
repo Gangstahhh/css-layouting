@@ -1,0 +1,73 @@
+/* NOTE: Hapus Element Coment Jika Ingin Melihat Hasik */
+/* Float Merupakan Properti CSS untuk Mengatur Posisi Sebuah Element. Sebuah Element Dapat Dipaksa Untuk Disebelah Kiri Atau Kanan Dari Parents/Pembungkusnya Dengan Menggunakan Properti Ini */
+
+/* Terbagi Menjadi 3, Yaitu:
+    - None (default)
+    - Left (element berada di kiri)
+    - Right (elemet berada di kanan */
+
+/* Biasa di gunakan untuk:
+    - Tetx Wrapping (membuat teks mengelilingi gambar/elemen lain
+    - image gallery (membuat serangkaian gambar menjadi galeri
+    -multi-column layout (membuat halaman memiliki beberapa kolom)
+    -dll */
+
+/* NOTE: Jika memakai float. akan terjadi namanya out-of flow alias sang pembungkus tidak mengangap lagi element yang menggunakan flow berada dalam flow */
+
+/* NOTE: Jika menggunakan Float:right; posisi kontent akan berada di kanan beserta urutannya di mulai dari kanan ke kiri*/
+
+/* normal flow vs out-of flow adalah prilaku dari element-elemnt yang kita kasih css */
+
+.container {
+    width:600px;
+    border:1px solid black;
+    margin:auto;
+    padding:5px;
+}
+
+.satu, .dua, .tiga {
+    width:100px;
+    height:100px;
+}
+
+.satu {
+    background-color:red;
+}
+
+.dua {
+    background-color:green;
+    /*float:left;*/ /* kotak tidak menghilang tetapi di anggap pindah oleh kotak yang lain */
+    /*margin-left:10px;*/ /*bukti*/
+    float:right;
+}
+
+.tiga {
+    background-color:blue;
+}
+
+
+/* TEXT WRRAPING */
+.content {
+    width:600px;
+    border:1px solid black;
+    margin:auto;
+    padding:5px;
+}
+
+img {
+    float:right;
+    margin:5px;
+}
+
+/* IMAGE GALLERY */
+.kotak {
+    width:80px;
+    height:80px;
+    background-color:red;
+    color:white;
+    text-align:center;
+    /* TIPS: Jika Ingin Membuat item content Pas di Tengah - Tengah Tinggal Tambahkan Property line-height dengan Value yg sam adenga kotak */
+    line-height:80px;
+    margin:2px;
+    float:left;
+}
