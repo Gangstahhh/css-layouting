@@ -39,8 +39,8 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	main: '';
+	main: none;
 }
 table {
 	border-collapse: collapse;
@@ -59,7 +59,7 @@ body {
 
 
 .container {
-    width:800px;
+    width:960px;
     margin:auto;
     background-color:white;
 }
@@ -100,24 +100,27 @@ body {
     border-top:5px solid salmon;
 }
 
-.content {
+.main {
     padding:20px;
+    width:600px;
+    box-sizing:box-border;
+    float:left;
 }
 
-.content h2 {
+.main h2 {
     font-size:32px;
     font-weight:bold;
 }
 
-.content .penulis {
+.main .penulis {
     font-size:11px;
     margin-top: -5px;
 }
-.content .penulis a {
+.main .penulis a {
     color:salmon;
     text-decoration:none;
 }
-.content p {
+.main p {
     margin-bottom:20px;
     font-size:14px;
 }
@@ -132,3 +135,47 @@ body {
     text-align:center;
     font-size:12px;
 }
+
+.sidebar {
+    padding:20px;
+    width:300px;
+    float:right;
+    box-sizing:border-box;
+}
+
+.sidebar h3 {
+    font-weight:bold;
+    color:gray;   
+}
+
+
+
+.sidebar img {
+    width:70px;
+    height:70px;
+    float:left;
+    padding-right:10px;
+    border-radius:50%;
+}
+
+.sidebar p {
+    font:12px/18px arial;
+}
+
+
+
+/* MICRO-CLEARFIX */
+.cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ /* IMPORTANT Yang Membuat Sistem clearnya jalan */
+ .cf:after {
+     clear: both;
+ }
+ 
+ .cf {
+     *zoom: 1;
+ }

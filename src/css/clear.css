@@ -1,0 +1,25 @@
+/* NOTE: Hapus Coment Jika Ingin Melihat Hasilnya */
+/* NOTE: Clear berfungsi untuk menghentikan / membersihkan float */
+/* Clear ini terdiri dari 3 value:
+    - left (di pakai jika menggunakan float:left;)
+    - right (di pakai jka menggunakan float:right;0 
+    - both (keduannya) */
+
+    .content {
+        width:600px;
+        border:1px solid black;
+        margin:auto;
+        padding:5px;
+        /* TIPS: Ngakalin Mode */
+        /* overflow:auto; */
+    }
+    
+    img {
+        float:right;
+        margin:5px;
+    }
+
+
+    .clear {
+        clear:right;
+    }

@@ -1,0 +1,31 @@
+/* NOTE: Position Ini lebih powerfull dibandingkan menggunakan margin dikarenakan margin akan mempengaruhi element di sekitarnya */
+
+/* Position ini terbagi menjadi 4 value:
+   - static (default) (IMPORTANT: Element yang di position selain static dapat menggunakan properti seperti top,left,bottom dan right untuk mengatur posisinya
+
+   - relative (maju satu dimensi) 
+   (IMPORTANT: - Ruang Yang ditempati oleh element tersbut masih ada walaupun sudah maju satu dimensi
+               -  Ketika Kita Menggerakan  elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya
+               - jika kita memberi properti top:0; dan left:0; maka elemen tidak berubah posisinya
+               - biasanya di pakai untuk out of flow atau keluar dari flow
+   - absolute
+   - fixed */
+
+div {
+    width:200px;
+    height:200px;
+}
+
+.satu {
+    background-color:green;
+}
+
+.dua  {
+    background-color:blue;
+    position:relative;
+    top:30px;
+}
+
+.tiga {
+    background-color:yellow;
+}
