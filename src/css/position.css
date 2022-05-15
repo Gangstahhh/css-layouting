@@ -8,12 +8,23 @@
                -  Ketika Kita Menggerakan  elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya
                - jika kita memberi properti top:0; dan left:0; maka elemen tidak berubah posisinya
                - biasanya di pakai untuk out of flow atau keluar dari flow
-   - absolute
-   - fixed */
+
+
+   - absolute (IMPORTANT: - Ruang Yang ditempati oleh element tersbut dianggap tidak ada oleh elemen lain yang static
+                          - Ketika Kita Menggerakan elemen dengan absolute. elemen akan bergerak relatif terhadap posisi parent-nya selama elemen parent-nya memiliki posisi yang juga non-static
+        
+   - fixed (IMPORTANT: - Relatif Terhadap Windows bukan terhadap parents-nya walaupun parent-nya non-static
+                       - terkunci di posisi yang di tentukan
+                       -  ketika di scroll elemen tersebut tidak akan bergerak    */
+
+body {
+    height:2000px;
+}
 
 div {
     width:200px;
     height:200px;
+    margin:auto;
 }
 
 .satu {
@@ -22,10 +33,22 @@ div {
 
 .dua  {
     background-color:blue;
-    position:relative;
-    top:30px;
+    /* position:relative; */
+    /* position:absolute; */
+    position:fixed;
+    height:85px;
+    width:100%;
+    top:0;
+    right:0;
 }
 
 .tiga {
     background-color:yellow;
+}
+
+.container {
+    width:600px;
+    height:650px;
+    border:10px solid aquamarine;
+    position:relative;
 }
