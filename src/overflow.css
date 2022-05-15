@@ -1,0 +1,29 @@
+/* NOTE : Hapus Element Komen Jika Ingi Melihat Hasil */
+/* Overflow Digunakan Untuk Mengatur Jikalau Content Keluar Batas  Dari Parent */
+/* Value Dari Overflow Ini Dibagi Menajdi 4 , Yaitu: 
+   - Visible ( Default)
+   - Auto ( membuat scroll jika contentnya kebanyakan jika cukup ia akan scara otomatis tidak membuat scroll)
+   - Hidden (content akan di sembunyikan)
+   - Scroll (akan membuat scroll walaupun content tidak kelewatan parents) */
+
+div {
+    width:200px;
+    height:100px;
+    background-color:pink;
+}
+
+.satu {
+    overflow:visible;
+}
+
+.dua {
+    overflow:auto;
+}
+
+.tiga {
+    overflow:hidden;
+}
+
+.empat {
+    overflow:scroll;
+}

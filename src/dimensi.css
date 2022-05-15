@@ -1,0 +1,31 @@
+/* NOTE: Hapus Element Komentar Jika Ingin Melihat Hasilnya */
+
+ 
+/* Dimensi Di CSS Yaitu width dan Height Memilki Nilai / Satuan yang Bisa di Pakia Antara Lain*/
+/* - px (Besifat Absolute)
+   - % (relative terhadap parentnya)
+   - in (Inci), cm(centimeter), mm(mili meter), pt(point), pc(paica). (Ukuran Dunia nyata) */
+   /* NOTE: Untuk Point Dan paica biasa di gunakan dalam media cetak printing design yah adick adick */
+
+/* RELATIVE TERHADAPH BROWSER  */
+.nol {
+    width:100%; /* relative terhadap browser jadi dia akan mengikuti ukuran dari browser */
+    height:200px;
+    background-color:green; 
+}
+
+
+/* PARENTS */
+.satu {
+    background-color:blue;
+    width:500px;
+    height:500px;
+}
+
+/* CHILD */
+.dua {
+    background-color:pink; /* pada bagian child relative dengan ukuran parent  */
+    /* NOTE: Ubah ukuran Child nya Sesuka Kalian */
+    width:90%;
+    height:400px;
+}
